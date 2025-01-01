@@ -1,5 +1,5 @@
 $primary: #f86823;
-$secondary: #010521;
+$secondary: #353956;
 $light: #f9f9f9;
 $dark: #202020;
 
@@ -7,10 +7,12 @@ $enable-negative-margins: true;
 $enable-dark-mode: false;
 @import "./bootstrap-5.3.3/scss/bootstrap.scss";
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600&family=Barlow:wght@400;500;600&display=swap');
+@import url(assets/css/line-awesome.min.css);
 
 :root {
     --header-height: 90px;
     --footer-height: 92px;
+    --primary-light: lighten($color: $primary, $amount: 10);
 }
 
 .barlow-regular {
@@ -47,6 +49,105 @@ body {
     @extend .barlow-medium;
     min-height: 100dvh;
     color: $dark;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @extend .barlow-condensed-medium;
+    position: relative;
+    margin: 0;
+    color: $primary;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    background: transparent;
+    border: 1px solid #e8e8e8;
+    padding: 13px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    margin-bottom: 20px;
+    border-radius: 7px;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+input[type=submit],
+button[type=submit] {
+    border: none;
+    border-radius: 0;
+    display: inline-block;
+    background: $primary;
+    padding: 15px 30px;
+    width: auto;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 6px;
+    color: #fff;
+}
+
+input[type=submit]:hover,
+button[type=submit]:hover {
+    background: lighten($color: $primary, $amount: 10);
+    color: #fff;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-size: 14px;
+    font-weight: 500;
+    color: #777;
+}
+
+input.form-control {
+    padding: 12px 20px;
+    line-height: 1.2;
+}
+
+button,
+input,
+textarea,
+a:hover,
+a:focus,
+a:visited {
+    text-decoration: none;
+    outline: none;
+    outline-width: 0 !important;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: $primary;
+    font-size: 15px;
+    font-weight: 500;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+img {
+    display: inline-block;
+    max-width: 100%;
 }
 
 .flex-fill {
@@ -149,6 +250,96 @@ body {
     margin-bottom: 0;
 
     font-size: 24px;
+}
+
+.section-subtitle-small {
+    @extend .barlow-condensed-medium;
+    color: $secondary;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.breadcrumb-section {
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+
+    .overlay-2 {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: #05120d;
+        opacity: 0.6;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    .breadcrumb-title {
+        text-align: center;
+
+        h1 {
+            font-size: 70px;
+            font-weight: 600;
+            letter-spacing: 4px;
+            color: #fff;
+            margin: 0;
+
+            @include media-breakpoint-down(md) {
+                font-size: 50px;
+            }
+
+            @include media-breakpoint-between(md, lg) {
+                font-size: 60px;
+            }
+        }
+
+
+        h6 {
+            color: lighten($color: $primary, $amount: 10);
+            font-size: 17px;
+            letter-spacing: 1px;
+            margin-top: 25px;
+
+            a {
+                color: #fff;
+                font-size: 17px;
+                text-decoration: none;
+                transition: 0.5s;
+            }
+        }
+    }
+
+}
+
+.service-bg {
+    background-image: url(assets/images/service_bg.jpg);
+}
+
+.products-bg {
+    background-image: url(assets/images/products_bg.jpg);
+}
+
+.partner-program-bg {
+    background-image: url(assets/images/partner_program_bg.jpg);
+}
+
+.contact-bg {
+    background-image: url(assets/images/contact_bg.jpg);
+}
+
+.blog-bg {
+    background-image: url(assets/images/blog_bg.jpg);
 }
 
 .hero-home-section {
@@ -305,54 +496,6 @@ body {
             margin-top: 20px;
         }
     }
-}
-
-.breadcrumb-section {
-    height: 400px;
-    background-size: cover;
-    background-position: center;
-    background-color: #ddd;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    z-index: 1;
-
-    .overlay-2 {
-        position: absolute;
-        content: "";
-        width: 100%;
-        height: 100%;
-        background: #05120d;
-        opacity: 0.6;
-        top: 0;
-        left: 0;
-        z-index: -1;
-    }
-
-    .section-title {
-        letter-spacing: 4px;
-        color: #fff;
-    }
-
-    .section-breadcrumb {
-        @extend .barlow-condensed-semibold;
-        font-size: 20px;
-        letter-spacing: 1px;
-        margin-top: 25px;
-        color: lighten($color: $primary, $amount: 10);
-
-        a {
-            text-decoration: none;
-            transition: 0.5s;
-            color: #fff;
-        }
-    }
-}
-
-img {
-    display: inline-block;
-    max-width: 100%;
 }
 
 .service-section {
@@ -561,7 +704,6 @@ img {
 .product-list-section {
     position: relative;
     display: block;
-    padding: 0 0 100px;
 
     .services-two_single {
         position: relative;
@@ -602,7 +744,7 @@ img {
 
             .services-two_icon {
                 padding: 20px;
-                background-color: #097e51;
+                background-color: $secondary;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -655,43 +797,245 @@ img {
     }
 }
 
-.hero-products-section {
-    padding: 100px 0 80px;
+.heading-section {
+    padding-top: 60px;
+
+    @include media-breakpoint-down(sm) {
+        padding-top: 50px;
+    }
+
+    @include media-breakpoint-between(sm, lg) {
+        padding-top: 40px;
+    }
+
+    @include media-breakpoint-between(lg, xxl) {
+        padding-top: 50px;
+    }
 
     .section-title {
-        font-size: 50px;
-        line-height: 56px;
-        margin-bottom: 25px;
         color: $primary;
+        margin: 20px 0;
     }
-
-    .section-subtitle {
-        font-size: 20px;
-        color: $dark;
-    }
-}
-
-.contact-section {
 }
 
 .section-padding {
-    padding: 120px 0;
-}
+    padding-top: 60px;
+    padding-bottom: 60px;
 
-@media (max-width: 575px) {
-    .section-padding {
-        padding: 50px 10px;
+    @include media-breakpoint-down(sm) {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    @include media-breakpoint-between(sm, lg) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    @include media-breakpoint-between(lg, xxl) {
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .section-padding {
-        padding: 40px 20px 50px;
+.section-padding-2 {
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+    @include media-breakpoint-down(md) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    @include media-breakpoint-between(md, lg) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    @include media-breakpoint-between(lg, xxl) {
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
-    .section-padding {
-        padding: 100px 10px;
+.partner-program-section {
+    .section-title {
+        color: $primary;
+        margin-bottom: 20px;
+
+    }
+
+    .section-desc {
+        margin-bottom: 1rem;
+    }
+
+}
+
+.contact-section {
+    .contact-wrapper {
+        background: $primary;
+        padding: 40px;
+
+        .contact-headline {
+            @extend .barlow-condensed-medium;
+            color: #fff;
+            font-size: 30px;
+            line-height: 36px;
+        }
+
+        .contact-single-info {
+            margin-top: 20px;
+
+            i {
+                color: $secondary;
+                font-size: 24px;
+                margin: 15px 0;
+            }
+
+            h6 {
+                font-size: 20px;
+                color: #fff;
+            }
+
+            p {
+                color: #fff;
+                font-size: 16px;
+                margin: 0;
+            }
+        }
+    }
+
+    .contact-form-wrap {
+        padding-left: 60px;
+
+        .contact-form-title {
+            margin-bottom: 50px;
+
+            @include media-breakpoint-down(lg) {
+                margin-bottom: 0;
+            }
+
+            @include media-breakpoint-between(lg, xl) {
+                margin-bottom: 30px;
+            }
+
+            .section-title {
+                margin-bottom: 20px;
+                line-height: 1;
+            }
+
+            .section-desc {
+                @extend .text-gray;
+                letter-spacing: 1px;
+                margin-bottom: 1rem;
+            }
+        }
+
+    }
+}
+
+.blog-section {
+    .single-blog-item {
+        background: #fff;
+        border: 1px solid #eee;
+        margin-bottom: 30px;
+
+        .blog-img {
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+            transition: 0.3s;
+
+            img {
+                width: 100%;
+                transition: transform ease 0.3s;
+                object-fit: cover;
+            }
+
+            .blog-date {
+                background: $primary;
+                color: #fff;
+                padding: 20px;
+                display: block;
+                width: 80px;
+                height: auto;
+                text-align: center;
+                position: absolute;
+                top: 0;
+                right: 0;
+                font-size: 18px;
+                line-height: 20px;
+            }
+        }
+
+        .blog-content {
+            padding: 20px 35px;
+
+            p.blog-meta {
+                font-size: 14px;
+                margin: 7px 0;
+                letter-spacing: 1px;
+                font-weight: 500;
+
+                i {
+                    font-size: 18px;
+                    margin-right: 4px;
+                    color: #DFB163;
+                }
+            }
+
+            h5 {
+                a {
+                    font-size: 22px;
+                    font-weight: 500;
+                    line-height: 32px;
+                    margin-top: 5px;
+                    margin-bottom: 20px;
+
+                    &.read-more {
+                        font-size: 16px;
+                        font-weight: 500;
+                        margin: 10px 0 0;
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+
+    .pagination-block {
+        display: block;
+        margin: 45px auto;
+    }
+
+    .page-numbers {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        display: inline-block;
+        color: #024731;
+        font-size: 15px;
+        font-weight: 600;
+        border: 1px solid #e9eef6;
+        border-radius: 3px;
+        margin: 0 3px;
+        padding: 0;
+        transition: all 0.3s ease 0s;
+
+        &.current {
+            background: $primary;
+            color: #fff;
+        }
+
+        &:hover {
+            background: $primary;
+            color: #fff;
+        }
+
+        i {
+            font-size: 20px;
+            font-weight: 500;
+        }
     }
 }
