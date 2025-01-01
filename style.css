@@ -3813,7 +3813,7 @@ textarea.form-control-lg {
   --bs-navbar-brand-font-size: 1.25rem;
   --bs-navbar-brand-color: rgba(var(--bs-emphasis-color-rgb), 1);
   --bs-navbar-brand-hover-color: rgba(var(--bs-emphasis-color-rgb), 1);
-  --bs-navbar-nav-link-padding-x: 0.5rem;
+  --bs-navbar-nav-link-padding-x: 1rem;
   --bs-navbar-toggler-padding-y: 0.25rem;
   --bs-navbar-toggler-padding-x: 0.75rem;
   --bs-navbar-toggler-font-size: 1.25rem;
@@ -12669,7 +12669,7 @@ a:visited {
 a {
   text-decoration: none;
   cursor: pointer;
-  color: #f86823;
+  color: #353956;
   font-size: 15px;
   font-weight: 500;
   -webkit-transition: 0.5s;
@@ -12734,6 +12734,9 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.footer a {
+  color: #f86823;
 }
 
 .section-title {
@@ -12906,7 +12909,7 @@ img {
 }
 .service-card .card-img .card-img-iconblock {
   padding: 20px;
-  background-color: #353956;
+  background-color: #f86823;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13198,7 +13201,7 @@ img {
 }
 .product-list-section .services-two_single .services-two_img-box .services-two_icon {
   padding: 20px;
-  background-color: #353956;
+  background-color: #f86823;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13457,7 +13460,48 @@ img {
 }
 .blog-section .page-numbers i {
   font-size: 20px;
-  font-weight: 500;
+}
+
+.navbar-toggler {
+  position: relative;
+}
+.navbar-toggler .navbar-toggler-icon {
+  background-image: none;
+}
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon:nth-of-type(1) {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 0;
+}
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon:nth-of-type(2) {
+  opacity: 0;
+}
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon:nth-of-type(3) {
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+  position: absolute;
+  top: 0;
+}
+@media (max-width: 991.98px) {
+  .navbar-toggler {
+    border: none;
+    padding: 0;
+    z-index: 99;
+    box-shadow: none;
+  }
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  .navbar-toggler .navbar-toggler-icon {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #f86823;
+    margin: 6px 0;
+    -webkit-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
