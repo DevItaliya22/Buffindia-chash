@@ -14,9 +14,16 @@
         <nav class="navbar navbar-expand-lg bg-body-tertiary header">
             <div class="container">
                 <a class="navbar-brand" href="index.html">Buffindia</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button> -->
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -55,7 +62,7 @@
             <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide swiper-slide-1 container-fluid">
-                    <div class="row h-100 gy-5 py-5">
+                    <div class="row h-100 gy-5 py-5 mt-4">
                         <div class="col-md-7 col-xl-6">
                             <div class="d-flex flex-column  justify-content-center gap-4 h-100">
                                 <h1 class="section-title">
@@ -157,7 +164,7 @@
     </section>
     <section class="about-section py-5">
         <div class="container">
-            <div class="row gy-5">
+            <div class="row g-4 g-lg-5">
                 <div class="col-md-6">
                     <div class="d-flex flex-column gap-4">
                         <div class="alert alert-primary border-0 mb-0">
@@ -197,7 +204,7 @@
             <h2 class="section-title text-primary mb-4">
                 Our Services
             </h2>
-            <div class="row g-4 mb-5">
+            <div class="row g-4 g-lg-5 mb-5">
                 <div class="col-md-6 col-lg-4">
                     <div class="card service-card">
                         <a href="service-1.html" class="stretched-link"></a>
@@ -278,7 +285,7 @@
         </div>
         <div class="our-impact-numbers-area">
             <div class="container">
-                <div class="row gy-5">
+                <div class="row g-4 g-lg-5">
                     <div class="col-lg-4">
                         <div class="single-counter-box">
                             <p class="counter-number"><span>500,000</span></p>
@@ -303,7 +310,7 @@
     </section>
     <section class="cta-section py-5 bg-secondary">
         <div class="container">
-            <div class="row gy-4 align-items-center">
+            <div class="row g-4 g-lg-5 align-items-center">
                 <div class="col-lg-6">
                     <h2 class="section-title text-white">Join the Movement for a Cleaner India!</h2>
                 </div>
@@ -337,10 +344,10 @@
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
-            // autoplay: {
-            //     delay: 2500,           
-            //     disableOnInteraction: false,
-            // },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
         });
     </script>
 </body>
