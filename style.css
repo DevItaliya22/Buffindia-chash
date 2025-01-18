@@ -12720,7 +12720,7 @@ img {
   padding: 24px 0;
 }
 .header .nav-item .nav-link {
-  font-size: 14px;
+  font-size: 1rem;
   color: #202020;
 }
 .header .nav-item .nav-link.active {
@@ -12875,6 +12875,8 @@ img {
   min-height: calc(100dvh - var(--header-height));
   background: url("./assets/images/banner-1.jpeg") center center no-repeat;
   background-size: cover;
+  padding-right: 65px;
+  padding-left: 65px;
 }
 .hero-home-section .section-title {
   letter-spacing: 2px;
