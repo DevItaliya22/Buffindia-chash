@@ -243,6 +243,38 @@ img {
             margin-top: 20px;
         }
     }
+
+    .subscribe-form {
+        position: relative;
+
+        form {
+            display: flex;
+            align-items: center;
+
+            input {
+                margin: 0;
+                background: #fff;
+                border-radius: 12px 0px 0px 12px;
+                border: 0;
+            }
+
+            button {
+                font-size: 16px;
+                line-height: 18px;
+                color: #fff;
+                -webkit-transition: all 0.3s ease-out 0s;
+                transition: all 0.3s ease-out 0s;
+                border-radius: 0px 10px 10px 0px;
+                border: 0;
+                cursor: pointer;
+                background-color: $secondary;
+
+                &:hover {
+                    opacity: 0.9;
+                }
+            }
+        }
+    }
 }
 
 .footer-bottom {
@@ -392,6 +424,18 @@ img {
 
 .blog-bg {
     background-image: url(assets/images/blog_bg.jpg);
+}
+
+.campaign-bg {
+    background-image: url(assets/images/campaign.jpg);
+}
+
+.aboutus-bg {
+    background-image: url(assets/images/aboutus.jpg);
+}
+
+.privacy-policy-bg {
+    background-image: url(assets/images/privacy-policy.jpg);
 }
 
 .hero-home-section {
@@ -918,6 +962,7 @@ img {
 }
 
 .partner-program-section {
+
     .section-title {
         color: $primary;
         margin-bottom: 20px;
@@ -1095,6 +1140,61 @@ img {
         i {
             font-size: 20px;
         }
+    }
+}
+
+.meet-our-team {
+    .team-member {
+        box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.07);
+        padding: 30px 20px;
+        height: 100%;
+
+        .team-img {
+            overflow: hidden;
+            margin: 0 auto;
+            display: block;
+            border: 1px solid transparent;
+            aspect-ratio: 9 / 9;
+
+            img {
+                width: 100%;
+                aspect-ratio: 9 / 9;
+                object-fit: cover;
+                object-position: center;
+            }
+
+            &:hover {
+                padding: 10px;
+                border: 1px solid $primary;
+                cursor: pointer;
+                transition: padding 0.2s,border 0.2s;
+            }
+        }
+        .team-desc {
+            position: relative;
+            display: block;
+            background-color: rgb(255, 255, 255);
+            border-top: 1px solid #eee;
+            margin-top: 20px;
+            padding-top: 20px;
+
+            .team-name {
+                color: $primary;
+                font-size: 18px;
+                font-weight: 600;
+
+                @media(max-width: 767.98px) {
+                    font-size: 16px;
+                }
+            }
+
+            .team-role {
+                font-size: 16px;
+                font-weight: 500;
+                color: #656565;
+            }
+        }
+
     }
 }
 
