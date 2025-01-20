@@ -86,19 +86,19 @@
                             <div class="swiper-wrapper">
                               <!-- Slides -->
                               <div class="swiper-slide">
-                                <img class="img-fluid" src="/assets/images/company-patterns.png" alt="company-patterns">
+                                <img class="img-fluid" src="assets/images/company-patterns.png" alt="company-patterns">
                               </div>
                               <div class="swiper-slide">
-                                <img class="img-fluid" src="/assets/images/company-patterns.png" alt="company-patterns">
+                                <img class="img-fluid" src="assets/images/company-patterns.png" alt="company-patterns">
                               </div>
                               <div class="swiper-slide">
-                                <img class="img-fluid" src="/assets/images/company-patterns.png" alt="company-patterns">
+                                <img class="img-fluid" src="assets/images/company-patterns.png" alt="company-patterns">
                               </div>
                               <div class="swiper-slide">
-                                <img class="img-fluid" src="/assets/images/company-patterns.png" alt="company-patterns">
+                                <img class="img-fluid" src="assets/images/company-patterns.png" alt="company-patterns">
                               </div>
                               <div class="swiper-slide">
-                                <img class="img-fluid" src="/assets/images/company-patterns.png" alt="company-patterns">
+                                <img class="img-fluid" src="assets/images/company-patterns.png" alt="company-patterns">
                               </div>
                             </div>
                           
@@ -139,7 +139,7 @@
                             <div class="col-lg-3 mb-lg-0 mb-3">
                                 <div class="partner-card">
                                     <div class="partner-img">
-                                        <img class="img-fluid" src="/assets/images/dummy_logo_1.png" alt="supports">
+                                        <img class="img-fluid" src="assets/images/dummy_logo_1.png" alt="supports">
                                     </div>
                                     <div class="partner-name">Silk</div>
                                     <div class="partner-desc">Committed to sustainability since 2020</div>
@@ -148,7 +148,7 @@
                             <div class="col-lg-3 mb-lg-0 mb-3">
                                 <div class="partner-card">
                                     <div class="partner-img">
-                                        <img class="img-fluid" src="/assets/images/dummy_logo_2.png" alt="supports">
+                                        <img class="img-fluid" src="assets/images/dummy_logo_2.png" alt="supports">
                                     </div>
                                     <div class="partner-name">Green</div>
                                     <div class="partner-desc">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
@@ -157,7 +157,7 @@
                             <div class="col-lg-3 mb-lg-0 mb-3">
                                 <div class="partner-card">
                                     <div class="partner-img">
-                                        <img class="img-fluid" src="/assets/images/dummy_logo_1.png" alt="supports">
+                                        <img class="img-fluid" src="assets/images/dummy_logo_1.png" alt="supports">
                                     </div>
                                     <div class="partner-name">Jack</div>
                                     <div class="partner-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
@@ -166,7 +166,7 @@
                             <div class="col-lg-3 mb-lg-0 mb-3">
                                 <div class="partner-card">
                                     <div class="partner-img">
-                                        <img class="img-fluid" src="/assets/images/dummy_logo_2.png" alt="supports">
+                                        <img class="img-fluid" src="assets/images/dummy_logo_2.png" alt="supports">
                                     </div>
                                     <div class="partner-name">Minut</div>
                                     <div class="partner-desc">Lorem ipsum dolor sit amet consectetur.</div>
@@ -266,7 +266,7 @@
     <script>
         // Initialize Swiper
         const swiper = new Swiper('.swiper', {
-            slidesPerView: 4,
+            slidesPerView: 1,
             // spaceBetween: 30,
             loop: true,
             navigation: {
@@ -277,6 +277,20 @@
             //     delay: 2500,
             //     disableOnInteraction: false,
             // },
+            breakpoints: {
+                480: {
+                    slidesPerView: 1,
+                },
+                640: {
+                    slidesPerView: 2,
+                },
+                768: {
+                    slidesPerView: 3,
+                },
+                1024: {
+                    slidesPerView: 4,
+                },
+            },
         });
     </script>
 </body>
