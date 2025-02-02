@@ -13142,7 +13142,7 @@ img {
 
 .hero-home-section .swiper-slide {
   min-height: calc(100dvh - var(--header-height));
-  background: url("./assets/images/banner-1.png") center center no-repeat;
+  background: url("assets/images/banner-1.png") center center no-repeat;
   background-size: cover;
   padding-right: 65px;
   padding-left: 180px;
