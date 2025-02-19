@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buffindia</title>
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -139,7 +140,7 @@
     <section class="about-section py-5 my-lg-5 my-3">
         <div class="container">
             <div class="row g-4 g-lg-5 align-items-center">
-                <div class="col-lg-6">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
                     <div class="d-flex flex-column gap-3 mb-5">
                         <div class="alert bg-light border-0 mb-0 font-22 barlow-medium">
                             India’s first sustainable solution for cigarette waste management
@@ -159,12 +160,15 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6" data-aos="fade-down" data-aos-duration="1000">
                     <div class="position-relative">
                         <img src="assets/images/who_are_we.png" alt="" class="img-fluid rounded-3">
                         <div class="about-section-imageside-block">
                             <div class="d-flex flex-column text-center gap-1">
-                                <div class="font-90 barlow-medium">1000+</div>
+                                <div class="font-90 barlow-medium">
+                                    <span id="counter1">1000</span>
+                                    <span>+</span>
+                                </div>
                                 <div class="section-desc text-white">Happy Supporters</div>
                             </div>
                         </div>
@@ -180,7 +184,7 @@
                 Our Services
             </h2>
             <div class="row g-4 g-lg-5 mb-5">
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4" data-aos="flip-left" data-aos-duration="2000">
                     <div class="card service-card">
                         <a href="service-1.html" class="stretched-link"></a>
                         <div class="card-img">
@@ -202,7 +206,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4" data-aos="flip-left" data-aos-duration="2000">
                     <div class="card service-card">
                         <a href="service-2.html" class="stretched-link"></a>
                         <div class="card-img">
@@ -224,7 +228,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4" data-aos="flip-left" data-aos-duration="2000">
                     <div class="card service-card">
                         <a href="service-3.html" class="stretched-link"></a>
                         <div class="card-img">
@@ -252,7 +256,7 @@
         </div>
     </section>
 
-    <section class="impact-section pt-5 mt-lg-4 mt-3">
+    <section class="impact-section pt-5 mt-lg-4 mt-3" data-aos="fade-up" data-aos-duration="1000">
         <div class="our-impact-area pb-5">
             <div class="container">
                 <div class="row gx-0">
@@ -275,19 +279,27 @@
                 <div class="row g-4 g-lg-5">
                     <div class="col-lg-4">
                         <div class="single-counter-box">
-                            <p class="counter-number"><span>86400000</span></p>
+                            <p class="counter-number">
+                                <span id="counter2">86400000</span>
+                            </p>
                             <h6>Cigarette Butts Upycled</h6>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="single-counter-box">
-                            <p class="counter-number"><span>1000+</span></p>
+                            <p class="counter-number">
+                                <span id="counter3">1000</span>
+                                <span>+</span>
+                            </p>
                             <h6>Corporates & Hotel Parters</h6>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="single-counter-box">
-                            <p class="counter-number"><span>85+</span></p>
+                            <p class="counter-number">
+                                <span id="counter4">85</span>
+                                <span>+</span>
+                            </p>
                             <h6>Cities Served Across India</h6>
                         </div>
                     </div>
@@ -448,6 +460,8 @@
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/countUp.umd.js"></script>
+    <script src="assets/js/aos.js"></script>
     <script>
         // Initialize Swiper
         const swiper = new Swiper('.swiper', {
@@ -461,6 +475,25 @@
             //     disableOnInteraction: false,
             // },
         });
+
+        // Countup
+        const targets = [
+            { elementId: "counter1", targetNumber: 1000 },
+            { elementId: "counter2", targetNumber: 86400000 },
+            { elementId: "counter3", targetNumber: 1000 },
+            { elementId: "counter4", targetNumber: 85 }
+        ];
+        targets.forEach(target => {
+        const counter = new countUp.CountUp(target.elementId, target.targetNumber, {
+            enableScrollSpy: true,
+            scrollSpyOnce: true,
+            duration: 1.5
+        });
+        counter.start();
+        });
+
+        // AOS Animation
+        AOS.init();
     </script>
 </body>
 
