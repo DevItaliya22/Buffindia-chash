@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buffindia</title>
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,7 +13,9 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary header">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">Buffindia</a>
+                <a class="navbar-brand" href="index.html">
+                    <img class="img-fluid" src="assets/images/logo.svg" alt="logo">
+                </a>
                 <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -30,7 +32,7 @@
                             <a class="nav-link" aria-current="page" href="services.html">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="products.html">Products</a>
+                            <a class="nav-link" aria-current="page" href="products.html">Eco-Art</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="partner-program.html">Partner Program</a>
@@ -41,13 +43,10 @@
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
                         </li>
-                        <!-- <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="blog.html">Blog</a>
-                        </li> -->
                     </ul>
-                    <button class="btn btn-secondary ms-lg-4">
+                    <a class="btn btn-primary-gradient ms-lg-4 px-4" href="contact.html">
                         Let’s Connect
-                    </button>
+                    </a>
                 </div>
             </div>
         </nav>
@@ -66,60 +65,40 @@
             </div>
         </div>
     </section>
+
     <section class="partner-program-section">
         <div class="container section-padding">
             <div class="row g-4 g-lg-5">
                 <div class="col-lg-12">
                     <div class="about-content-area">
                         <div>
-                            <h2 class="section-title">
+                            <h2 class="section-title text-center mb-2">
                                 Building a Sustainable Future Together
                             </h2>
                         </div>
-                        <p class="section-desc">
+                        <p class="section-desc text-center">
                             We’re proud to collaborate with visionary partners across India who share our mission for a cleaner, greener environment.
                         </p>
-                    </div>
-                    <div class="patterns-slider">
-                        <div class="swiper">
-                            <!-- Additional required wrapper -->
-                            <div class="swiper-wrapper">
-                              <!-- Slides -->
-                              <div class="swiper-slide">
-                                <img class="img-fluid" src="assets/images/company-patterns.png" alt="company-patterns">
-                              </div>
-                              <div class="swiper-slide">
-                                <img class="img-fluid" src="assets/images/company-patterns.png" alt="company-patterns">
-                              </div>
-                              <div class="swiper-slide">
-                                <img class="img-fluid" src="assets/images/company-patterns.png" alt="company-patterns">
-                              </div>
-                              <div class="swiper-slide">
-                                <img class="img-fluid" src="assets/images/company-patterns.png" alt="company-patterns">
-                              </div>
-                              <div class="swiper-slide">
-                                <img class="img-fluid" src="assets/images/company-patterns.png" alt="company-patterns">
-                              </div>
-                            </div>
-                          
-                            <!-- If we need navigation buttons -->
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="partner-program-section">
+
+    <section class="partner-program-section product-odd">
         <div class="container section-padding">
             <div class="row g-4 g-lg-5">
-                <div class="col-12">
+                <div class="col-lg-6 text-right order-1 order-lg-0" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="about_image_2">
+                        <img src="assets/images/value-partner.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 order-0 order-lg-1" data-aos="fade-down" data-aos-duration="1000">
                     <div class="about-content-area">
                         <div>
                             <h2 class="section-title">Together, We Create Impact</h2>
                         </div>
-                        <p class="section-desc fw-semibold">
+                        <p class="section-desc">
                             At Buffindia, our journey to redefine cigarette waste management wouldn’t be possible without the unwavering support of our key partners. From leading corporates to renowned organizations, our partners help us amplify our mission and make a lasting impact on communities across India
                         </p>
                     </div>
@@ -127,50 +106,315 @@
             </div>
         </div>
     </section>
+
     <section class="partner-program-section">
         <div class="container section-padding">
             <div class="row g-4 g-lg-5">
                 <div class="col-12">
                     <div class="about-content-area">
                         <div>
-                            <h2 class="section-title">Our Key Partners Across India</h2>
+                            <h2 class="section-title text-center">Our Key Partners Across India</h2>
                         </div>
-                        <div class="row">
-                            <div class="col-lg-3 mb-lg-0 mb-3">
-                                <div class="partner-card">
-                                    <div class="partner-img">
-                                        <img class="img-fluid" src="assets/images/dummy_logo_1.png" alt="supports">
-                                    </div>
-                                    <div class="partner-name">Silk</div>
-                                    <div class="partner-desc">Committed to sustainability since 2020</div>
-                                </div>
+                        <div class="d-flex align-items-center justify-content-center flex-wrap">
+                            <div class="logo" data-aos="flip-left" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/adani.png" alt="">
                             </div>
-                            <div class="col-lg-3 mb-lg-0 mb-3">
-                                <div class="partner-card">
-                                    <div class="partner-img">
-                                        <img class="img-fluid" src="assets/images/dummy_logo_2.png" alt="supports">
-                                    </div>
-                                    <div class="partner-name">Green</div>
-                                    <div class="partner-desc">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
-                                </div>
+                            <div class="logo" data-aos="flip-right" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/wells.png" alt="">
                             </div>
-                            <div class="col-lg-3 mb-lg-0 mb-3">
-                                <div class="partner-card">
-                                    <div class="partner-img">
-                                        <img class="img-fluid" src="assets/images/dummy_logo_1.png" alt="supports">
-                                    </div>
-                                    <div class="partner-name">Jack</div>
-                                    <div class="partner-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
-                                </div>
+                            <div class="logo" data-aos="flip-left" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/gaar.png" alt="">
                             </div>
-                            <div class="col-lg-3 mb-lg-0 mb-3">
-                                <div class="partner-card">
-                                    <div class="partner-img">
-                                        <img class="img-fluid" src="assets/images/dummy_logo_2.png" alt="supports">
-                                    </div>
-                                    <div class="partner-name">Minut</div>
-                                    <div class="partner-desc">Lorem ipsum dolor sit amet consectetur.</div>
-                                </div>
+                            <div class="logo" data-aos="flip-right" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/hyatt.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-left" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/fortune.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-right" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/royal-orchid.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-left" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/advani.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-right" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/club-mahindra.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-left" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/taj.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-right" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/marriott.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-left" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/chalet-hotel.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-right" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/mahindra.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-left" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/caravela-resort.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-right" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/welcomhotel.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-left" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/radisson.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-right" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/la-ri-sa.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-left" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/araiya.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-right" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/meridien.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-left" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/accor.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-right" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/sterling.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-left" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/embassy.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-right" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/westin.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-left" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/fairfield-marriott.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-right" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/conrad.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-left" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/crowne.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-right" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/planet-hollywood.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-left" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/holidayinn.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-right" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/ibis.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-left" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/happy-snack.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-right" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/accenture.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-left" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/hycinth.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-right" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/beatle.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-left" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/lambdatest.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-right" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/carelon.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-left" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/sarovar.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-right" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/ginger.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-left" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/kec.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-right" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/prestige-group.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-left" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/aloft.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-right" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/expol-inn.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-left" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/caravela.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-right" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/boulward.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-left" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/novotel.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-right" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/collabera.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-left" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/howard.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-right" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/hilton.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-left" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/president.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-right" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/taj-palace.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-left" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/the-duke.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-right" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/umaid.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-left" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/dlf.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-right" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/hyatt-centric.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-left" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/bagmane.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-right" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/vesta.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-left" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/resort.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-right" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/conrad-signatur.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-left" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/double-tree.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-right" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/wework.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-left" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/baba.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-right" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/new-love.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-left" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/amazon.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-right" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/grand-bangalore.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-left" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/futura.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-right" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/ascot.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-left" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/adani-ahm.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-right" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/renaissance.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-left" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/schindler.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-right" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/taj-palace.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-left" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/kempegowda.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-right" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/hyatt-place.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-left" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/holiday-inn.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-right" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/radisson-resort.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-left" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/macain.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-right" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/fiserv.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-left" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/the-leela.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-right" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/amoravida.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-left" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/fairfield-marriott.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-right" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/park-hyatt.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-left" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/hyatt-regency.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-right" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/housing.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-left" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/10-2.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-right" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/goldman.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-left" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/cbre.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-right" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/brigade.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-left" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/lyfe.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-right" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/raajkutir.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-left" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/grape.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-right" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/anandrathi.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-left" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/gep.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-right" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/lake-palace.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-left" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/21-2.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-right" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/the-fern.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-left" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/ihcl.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-right" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/itc-hotel.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-left" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/grand.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-right" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/denali.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-left" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/savoy-suites.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-right" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/indioube.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-left" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/vivanta.png" alt="">
+                            </div>
+                            <div class="logo" data-aos="flip-right" data-aos-duration="1000">
+                                <img class="img-fluid" src="assets/images/partner-logo/andaz.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -178,64 +422,81 @@
             </div>
         </div>
     </section>
-    <section class="partner-program-section">
+
+    <section class="partner-program-section product-odd">
         <div class="container section-padding">
-            <div class="row g-4 g-lg-5">
-                <div class="col-lg-6 text-right order-1 order-lg-0 ">
+            <div class="row g-4 g-lg-5 align-items-center">
+                <div class="col-lg-6 text-right order-1 order-lg-0" data-aos="fade-down" data-aos-duration="1000">
                     <div class="about_image_2">
-                        <img src="assets/images/campaign-1.jpg" alt="">
+                        <img src="assets/images/partner-with-us.png" alt="">
                     </div>
                 </div>
-                <div class="col-lg-6 order-0 order-lg-1">
+                <div class="col-lg-6 order-0 order-lg-1" data-aos="fade-up" data-aos-duration="1000">
                     <div class="about-content-area">
                         <div>
                             <h2 class="section-title">Partner With Us</h2>
                         </div>
-                        <p class="section-desc fw-semibold">
+                        <p class="section-badge">
                             Join Our Growing Network of Partners
                         </p>
                         <p class="section-desc">
                             Are you passionate about sustainability and looking to create meaningful change? Join Buffindia’s network of partners and contribute to a cleaner, greener India.
                         </p>
-                        <a href="#" class="btn btn-secondary">Become a Partner</a>
+                        <div class="d-inline-flex">
+                            <a href="#" class="btn btn-primary-gradient font-32 barlow-medium h-70 px-4">Become a Partner</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="partner-program-section">
-        <div class="container section-padding">
-            <div class="row g-4 g-lg-5">
-                <div class="col-lg-6">
-                    <div class="about-content-area">
-                        <div>
-                            <h2 class="section-title">Impact Metrics</h2>
+
+    <section class="impact-section pt-5 mt-lg-4 mt-3" data-aos="fade-up" data-aos-duration="1000">
+        <div class="our-impact-area pb-5">
+            <div class="container">
+                <div class="row gx-0">
+                    <div class="col-xl-5 col-lg-5">
+                        <div class="our-impact-content">
+                            <h3 class="section-title">Our Impact in Numbers</h3>
+                            <a href="#" class="btn btn-primary-gradient font-32 barlow-medium h-70 px-lg-4 px-2">Learn How You Can Help</a>
                         </div>
-                        <p class="section-desc fw-semibold">
-                            Our Collaborative Achievements
-                        </p>
-                        <p class="section-desc">
-                            Together with our partners, we’ve achieved:
-                        </p>
-                        <ol class="ps-3" start="1">
-                            <li>
-                                1,000+ Clients Supported
-                            </li>
-                            <li>
-                                [X] Cigarette Butts Upcycled
-                            </li>
-                            <li>
-                                [X] Cities Impacted
-                            </li>
-                            <li>
-                                [X] Employment Opportunities Created
-                            </li>
-                        </ol>
+                    </div>
+                    <div class="col-xl-7 col-lg-7">
+                        <div class="our-impact-img">
+                            <img src="assets/images/impact.png" class="img-fluid" alt="">
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-6 text-right">
-                    <div class="about_image_2">
-                        <img src="assets/images/2.jpg" alt="">
+            </div>
+        </div>
+        <div class="our-impact-numbers-area numbers">
+            <div class="container">
+                <div class="row g-4 g-lg-5">
+                    <div class="col-lg-4">
+                        <div class="single-counter-box">
+                            <p class="counter-number">
+                                <span id="counter2">86400000</span>
+                            </p>
+                            <h6>Cigarette Butts Upycled</h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="single-counter-box">
+                            <p class="counter-number">
+                                <span id="counter3">1200</span>
+                                <span>+</span>
+                            </p>
+                            <h6>Corporates & Hotel Parters</h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="single-counter-box">
+                            <p class="counter-number">
+                                <span id="counter4">85</span>
+                                <span>+</span>
+                            </p>
+                            <h6>Cities Served Across India</h6>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -301,13 +562,13 @@
                                         <a href="">EcoArt by Buffindia</a>
                                     </li>
                                     <li>
-                                        <a href="awards.html">Public Campaign</a>
+                                        <a href="#">Public Campaign</a>
                                     </li>
                                     <li>
-                                        <a href="reference-and-support.html">Partner Program</a>
+                                        <a href="#">Partner Program</a>
                                     </li>
                                     <li>
-                                        <a href="our-supporter.html">Supporter Page</a>
+                                        <a href="#">Supporter Page</a>
                                     </li>
                                     <li>
                                         <a href="contact.html">Contact Us</a>
@@ -318,13 +579,19 @@
                                 <h6>Get Involved</h6>
                                 <ul class="list-unstyled">
                                     <li>
-                                        <a href="">Become a Partner</a>
+                                        <a href="our-supporter.html">Become a Partner</a>
                                     </li>
                                     <li>
                                         <a href="">Support the Campaign</a>
                                     </li>
                                     <li>
                                         <a href="">Shop EcoArt</a>
+                                    </li>
+                                    <li>
+                                        <a href="reference-and-support.html">References</a>
+                                    </li>
+                                    <li>
+                                        <a href="awards.html">Recognitions</a>
                                     </li>
                                     <li>
                                         <a href="">Donate</a>
@@ -378,36 +645,25 @@
     </footer>
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/countUp.umd.js"></script>
+    <script src="assets/js/aos.js"></script>
     <script>
-        // Initialize Swiper
-        const swiper = new Swiper('.swiper', {
-            slidesPerView: 1,
-            // spaceBetween: 30,
-            loop: true,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            // autoplay: {
-            //     delay: 2500,
-            //     disableOnInteraction: false,
-            // },
-            breakpoints: {
-                480: {
-                    slidesPerView: 1,
-                },
-                640: {
-                    slidesPerView: 2,
-                },
-                768: {
-                    slidesPerView: 3,
-                },
-                1024: {
-                    slidesPerView: 4,
-                },
-            },
+        const targets = [
+            { elementId: "counter2", targetNumber: 86400000 },
+            { elementId: "counter3", targetNumber: 1200 },
+            { elementId: "counter4", targetNumber: 85 }
+        ];
+        targets.forEach(target => {
+            const counter = new countUp.CountUp(target.elementId, target.targetNumber, {
+                enableScrollSpy: true,
+                scrollSpyOnce: true,
+                duration: 1.5
+            });
+            counter.start();
         });
+
+        // AOS Animation
+        AOS.init();
     </script>
 </body>
 
