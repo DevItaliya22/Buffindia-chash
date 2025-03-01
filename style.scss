@@ -237,6 +237,13 @@ img {
         color: $white;
         opacity: 0.9;
     }
+
+    @include media-breakpoint-down(sm) {
+        font-size: 16px !important;
+        height: 36px !important;
+        padding: 6px 10px !important;
+        border-radius: 6px;
+    }
 }
 
 .swiper-button-next,
@@ -291,6 +298,7 @@ img {
     }
 
     @include media-breakpoint-between(lg, xl) {
+        padding: 0;
         .nav-item {
             .nav-link {
                 padding: 8px;
@@ -375,6 +383,18 @@ img {
                 &:hover {
                     opacity: 0.9;
                 }
+
+                @include media-breakpoint-down(sm) {
+                    font-size: 16px !important;
+                    height: 49px !important;
+                    border-radius: 0px 10px 10px 0px;
+                    min-width: 60px;
+
+                    i {
+                        font-size: 22px;
+                    }
+                }
+
             }
         }
     }
@@ -411,7 +431,7 @@ img {
 
     @include media-breakpoint-between(lg, xl) {
         font-size: 55px;
-        line-height: 60px;
+        line-height: 66px;
     }
 
     @include media-breakpoint-between(md, lg) {
@@ -686,6 +706,10 @@ img {
     .supported-image {
         height: 480px;
 
+        @include media-breakpoint-down(xl) {
+            height: 380px;
+        }
+
         @include media-breakpoint-down(sm) {
             height: 300px;
         }
@@ -774,6 +798,11 @@ img {
                     100% {
                         transform: scale(1, 1);
                     }
+                }
+
+                @include media-breakpoint-down(xl) {
+                    height: 90px;
+                    width: 90px;
                 }
 
                 @include media-breakpoint-down(sm) { 
@@ -1365,7 +1394,12 @@ img {
 
     @include media-breakpoint-down(xxl) {
         .card-body {
-            padding: 30px;
+            padding: 26px 16px 40px 16px;
+
+            .card-data {
+                height: 36px;
+                font-size: 16px;
+            }
         }
     }
 
@@ -1400,6 +1434,19 @@ img {
                     border-radius: 50%;
                     top: 0;
                     left: 0;
+                }
+            }
+
+            @include media-breakpoint-down(xl) {
+                .image {
+                    img {
+                        width: 180px;
+                    }
+
+                    &::after {
+                        height: 180px;
+                        width: 180px;
+                    }
                 }
             }
         }
@@ -1910,6 +1957,14 @@ img {
                 }
             }
         }
+
+        @include media-breakpoint-down(sm) {
+            padding-top: 0px;
+
+            .awards-wrapper {
+                padding: 20px !important;
+            }
+        }
     }
 
     .swiper-button-next,
@@ -1933,6 +1988,26 @@ img {
 
     .swiper-button-next {
         right: -46px;
+    }
+
+    @include media-breakpoint-down(xl) {
+        .swiper-button-prev {
+            left: -30px;
+        }
+
+        .swiper-button-next {
+            right: -30px;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        .swiper-button-prev {
+            left: 10px;
+        }
+
+        .swiper-button-next {
+            right: 10px;
+        }
     }
 }
 
@@ -1992,6 +2067,10 @@ img {
                 }
             }
         }
+
+        @include media-breakpoint-down(sm) {
+            padding-top: 20px;
+        }
     }
 
     .swiper-button-next,
@@ -2015,6 +2094,26 @@ img {
 
     .swiper-button-next {
         right: -46px;
+    }
+
+    @include media-breakpoint-down(xl) {
+        .swiper-button-prev {
+            left: -30px;
+        }
+
+        .swiper-button-next {
+            right: -30px;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        .swiper-button-prev {
+            left: 10px;
+        }
+
+        .swiper-button-next {
+            right: 10px;
+        }
     }
 }
 
@@ -2055,6 +2154,7 @@ img {
     
                 .user-detail {
                     display: flex;
+                    flex-wrap: wrap;
                     align-items: center;
                     gap: 8px;
 
@@ -2075,6 +2175,16 @@ img {
                         font-weight: 400;
                         color: $dark;
                     }
+                }
+            }
+        }
+
+        @include media-breakpoint-down(sm) {
+            padding-top: 20px;
+
+            .swiper-slide {
+                .article-card {
+                    padding: 20px 30px;
                 }
             }
         }
@@ -2101,6 +2211,26 @@ img {
 
     .swiper-button-next {
         right: -46px;
+    }
+
+    @include media-breakpoint-down(xl) {
+        .swiper-button-prev {
+            left: -30px;
+        }
+
+        .swiper-button-next {
+            right: -30px;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        .swiper-button-prev {
+            left: 10px;
+        }
+
+        .swiper-button-next {
+            right: 10px;
+        }
     }
 }
 
@@ -2215,6 +2345,10 @@ img {
     .logo {
         img {
             width: 120px;
+
+            @include media-breakpoint-down(sm) {
+                width: 74px;
+            }
         }
     }
 }
