@@ -12892,6 +12892,7 @@ img {
 @media (max-width: 991.98px) {
   .header {
     padding: 0;
+    margin-bottom: 12px;
   }
 }
 
@@ -13153,6 +13154,19 @@ img {
 .hero-home-section .swiper-slide.swiper-slide-2 {
   background: url("assets/images/banner-2.png") center center no-repeat;
 }
+@media (max-width: 767.98px) {
+  .hero-home-section .swiper-slide.swiper-slide-2:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #05120d;
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+}
 .hero-home-section .section-title {
   font-size: var(--rfs-90);
   line-height: 1;
@@ -13171,7 +13185,39 @@ img {
 }
 @media (max-width: 767.98px) {
   .hero-home-section .swiper-slide {
-    padding-left: 20px;
+    min-height: auto;
+    height: 280px;
+    padding-left: 46px;
+    padding-right: 36px;
+    background-size: cover !important;
+  }
+  .hero-home-section .section-title {
+    font-size: 28px;
+  }
+  .hero-home-section .section-desc {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .hero-home-section .btn-primary-gradient, .hero-home-section .footer-area .subscribe-form form button, .footer-area .subscribe-form form .hero-home-section button {
+    font-size: 15px !important;
+    height: 36px !important;
+    padding: 6px 12px !important;
+  }
+  .hero-home-section .swiper-button-prev {
+    height: 30px;
+    width: 30px;
+    left: 5px;
+  }
+  .hero-home-section .swiper-button-prev::after {
+    font-size: 14px;
+  }
+  .hero-home-section .swiper-button-next {
+    height: 30px;
+    width: 30px;
+    right: 5px;
+  }
+  .hero-home-section .swiper-button-next::after {
+    font-size: 14px;
   }
 }
 
@@ -13186,6 +13232,11 @@ img {
 
 .about-section .supported-image {
   height: 480px;
+}
+@media (max-width: 575.98px) {
+  .about-section .supported-image {
+    height: 300px;
+  }
 }
 .about-section .about-section-content-block {
   position: absolute;
@@ -13261,6 +13312,12 @@ img {
   }
   100% {
     transform: scale(1, 1);
+  }
+}
+@media (max-width: 575.98px) {
+  .about-section .about-section-content-block .persences-data-block .data-block-img {
+    height: 70px;
+    width: 70px;
   }
 }
 .about-section .about-section-content-block .persences-data-block .data {

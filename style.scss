@@ -293,6 +293,7 @@ img {
 
     @include media-breakpoint-down(lg) {
         padding: 0;
+        margin-bottom: 12px;
     }
 
 }
@@ -576,6 +577,20 @@ img {
 
         &.swiper-slide-2 {
             background: url("assets/images/banner-2.png") center center no-repeat;
+
+            @include media-breakpoint-down(md) {
+                &:after {
+                    position: absolute;
+                    content: "";
+                    width: 100%;
+                    height: 100%;
+                    background: #05120d;
+                    opacity: 0.6;
+                    top: 0;
+                    left: 0;
+                    z-index: -1;
+                }
+            }
         }
     }
 
@@ -600,9 +615,47 @@ img {
 
     @include media-breakpoint-down(md) {
         .swiper-slide {
-            padding-left: 20px;
+            min-height: auto;
+            height: 280px;
+            padding-left: 46px;
+            padding-right: 36px;
+            background-size: cover !important;
         }
 
+        .section-title {
+            font-size: 28px;
+        }
+
+        .section-desc {
+            font-size: 14px;
+            line-height: 16px;
+        }
+
+        .btn-primary-gradient {
+            font-size: 15px !important;
+            height: 36px !important;
+            padding: 6px 12px !important;
+        }
+
+        .swiper-button-prev {
+            height: 30px;
+            width: 30px;
+            left: 5px;
+
+            &::after {
+                font-size: 14px;
+            }
+        }
+
+        .swiper-button-next {
+            height: 30px;
+            width: 30px;
+            right: 5px;
+
+            &::after {
+                font-size: 14px;
+            }
+        }
     }
 }
 
@@ -621,6 +674,10 @@ img {
 .about-section {
     .supported-image {
         height: 480px;
+
+        @include media-breakpoint-down(sm) {
+            height: 300px;
+        }
     }
 
     .about-section-content-block {
@@ -706,6 +763,11 @@ img {
                     100% {
                         transform: scale(1, 1);
                     }
+                }
+
+                @include media-breakpoint-down(sm) { 
+                    height: 70px;
+                    width: 70px;
                 }
             }
 
