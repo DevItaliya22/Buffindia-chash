@@ -21,7 +21,7 @@ $navbar-nav-link-padding-x: 1rem;
     --rfs-24: clamp(16px, 1.25vw, 24px);
     --rfs-32: clamp(22px, 1.56vw, 32px);
     --rfs-36: clamp(26px, 1.89vw, 36px);
-    --rfs-48: clamp(32px, 2.48vw, 48px);
+    --rfs-48: clamp(28px, 2.48vw, 48px);
     --rfs-60: clamp(40px, 3.33vw, 60px);
     --rfs-90: clamp(55px, 4.688vw, 90px);
     --rfs-h60: clamp(42px, 3.125vw, 60px);
@@ -219,6 +219,13 @@ img {
         color: $white;
         opacity: 0.9;
     }
+
+    @include media-breakpoint-down(sm) {
+        font-size: 16px !important;
+        height: 36px !important;
+        padding: 6px 10px !important;
+        border-radius: 6px;
+    }
 }
 
 .btn-secondary-gradient {
@@ -293,6 +300,7 @@ img {
 
     @include media-breakpoint-down(lg) {
         padding: 0;
+        margin-bottom: 12px;
     }
 
 }
@@ -412,7 +420,7 @@ img {
     }
 
     @include media-breakpoint-down(md) {
-        font-size: 35px;
+        font-size: 30px;
         line-height: 40px;
     }
 }
@@ -509,6 +517,9 @@ img {
         }
     }
 
+    @include media-breakpoint-down(sm) {
+        height: 260px;
+    }
 }
 
 .our-service-section {
@@ -576,6 +587,20 @@ img {
 
         &.swiper-slide-2 {
             background: url("assets/images/banner-2.png") center center no-repeat;
+
+            @include media-breakpoint-down(md) {
+                &:after {
+                    position: absolute;
+                    content: "";
+                    width: 100%;
+                    height: 100%;
+                    background: #05120d;
+                    opacity: 0.6;
+                    top: 0;
+                    left: 0;
+                    z-index: -1;
+                }
+            }
         }
     }
 
@@ -600,9 +625,48 @@ img {
 
     @include media-breakpoint-down(md) {
         .swiper-slide {
-            padding-left: 20px;
+            min-height: auto;
+            height: 280px;
+            padding-left: 46px;
+            padding-right: 36px;
+            background-size: cover !important;
         }
 
+        .section-title {
+            font-size: 28px;
+        }
+
+        .section-desc {
+            font-size: 14px;
+            line-height: 16px;
+        }
+
+        .btn-primary-gradient {
+            font-size: 16px !important;
+            height: 36px !important;
+            padding: 6px 10px !important;
+            border-radius: 6px;
+        }
+
+        .swiper-button-prev {
+            height: 30px;
+            width: 30px;
+            left: 5px;
+
+            &::after {
+                font-size: 14px;
+            }
+        }
+
+        .swiper-button-next {
+            height: 30px;
+            width: 30px;
+            right: 5px;
+
+            &::after {
+                font-size: 14px;
+            }
+        }
     }
 }
 
@@ -621,6 +685,10 @@ img {
 .about-section {
     .supported-image {
         height: 480px;
+
+        @include media-breakpoint-down(sm) {
+            height: 300px;
+        }
     }
 
     .about-section-content-block {
@@ -707,12 +775,29 @@ img {
                         transform: scale(1, 1);
                     }
                 }
+
+                @include media-breakpoint-down(sm) { 
+                    height: 70px;
+                    width: 70px;
+                }
             }
 
             .data {
                 font-size: var(--rfs-24);
                 font-weight: 500;
                 color: #fff;
+            }
+        }
+
+        @include media-breakpoint-down(sm) {
+            top: 10px;
+
+            .persences-data-block {
+                .data-block-img {
+                    &::after {
+                        border-width: 5px;
+                    }
+                }
             }
         }
     }
@@ -1339,7 +1424,7 @@ img {
     padding-top: 60px;
 
     @include media-breakpoint-down(sm) {
-        padding-top: 50px;
+        padding-top: 30px;
     }
 
     @include media-breakpoint-between(sm, lg) {
@@ -2081,6 +2166,24 @@ img {
 
             100% {
                 transform: scale(1, 1);
+            }
+        }
+
+        @include media-breakpoint-down(sm) { 
+            &::after {
+                height: 60px;
+                width: 60px;
+            }
+
+            &::before {
+                height: 50px;
+                width: 50px;
+            }
+
+            .play-button {
+                height: 20px;
+                width: 20px;
+                background-position: 4px center;
             }
         }
     }
