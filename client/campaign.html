@@ -472,8 +472,8 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="subscribe-form">
                             <h6>Newsletter Subscription</h6>
-                            <form action="index.html">
-                                <input type="email" placeholder="Your email">
+                            <form action="#" id="email-form">
+                                <input type="email" placeholder="Your email" name="email">
                                 <button type="submit"><i class="las la-envelope"></i></button>
                             </form>
                             <p>Subscribe to receive updates and impact stories.</p>
@@ -539,6 +539,20 @@
 
         // AOS Animation
         AOS.init();
+        const emailForm = document.querySelector('#email-form');
+        emailForm?.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const formData = new FormData(emailForm);
+            const response = await fetch('http://localhost:3000/add_email_for_newsletter', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    email: formData.get('email'),
+                }),
+            });
+            const data = await response.json();
+            console.log(data);
+        });
     </script>
 </body>
 

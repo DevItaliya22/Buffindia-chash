@@ -328,7 +328,7 @@
                     </div>
         
                     <div class="col-lg-6 text-right">
-                        <form action="#" class="comment-one_form contact-form-validated" novalidate="novalidate">
+                        <form id="partner-program-form" action="#" class="comment-one_form contact-form-validated" novalidate="novalidate">
                             <div class="row">
                                 <div class="col-xl-6 col-lg-6">
                                     <div>
@@ -347,7 +347,7 @@
                                 </div>
                                 <div class="col-xl-6 col-lg-6">
                                     <div>
-                                        <input type="text" placeholder="City/State" name="name">
+                                        <input type="text" placeholder="City/State" name="city">
                                     </div>
                                 </div>
                                 <div class="col-12">
@@ -472,8 +472,8 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="subscribe-form">
                             <h6>Newsletter Subscription</h6>
-                            <form action="index.html">
-                                <input type="email" placeholder="Your email">
+                            <form action="#" id="email-form">
+                                <input type="email" placeholder="Your email" name="email">
                                 <button type="submit"><i class="las la-envelope"></i></button>
                             </form>
                             <p>Subscribe to receive updates and impact stories.</p>
@@ -535,6 +535,38 @@
 
         // AOS Animation
         AOS.init();
+        const partnerProgramForm = document.querySelector('#partner-program-form');
+        partnerProgramForm?.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const formData = new FormData(partnerProgramForm);
+            const response = await fetch('http://localhost:3000/partner_program_form', {
+                method: 'POST', 
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    name: formData.get('name'),
+                    email: formData.get('email'),
+                    phone: formData.get('phone'),
+                    message: formData.get('organization-name'),
+                    city: formData.get('city'),
+                }),
+            });
+            const data = await response.json();
+            console.log(data);
+        }); 
+        const emailForm = document.querySelector('#email-form');
+        emailForm?.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const formData = new FormData(emailForm);
+            const response = await fetch('http://localhost:3000/add_email_for_newsletter', {
+                method: 'POST', 
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    email: formData.get('email'),
+                }),
+            });
+            const data = await response.json();
+            console.log(data);
+        });
     </script>
 </body>
 
