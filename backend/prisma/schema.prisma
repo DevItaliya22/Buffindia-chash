@@ -13,9 +13,24 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model User {
+model ContactForm {
   id String @id @default(uuid())
   name String
+  email String 
+  mobile String 
+  message String
+}
+
+model Newsletter {
+  id String @id @default(uuid())
   email String @unique
-  password String
+}
+
+model PartnerProgramForm {
+  id String @id @default(uuid())
+  name String
+  email String 
+  mobile String
+  city String
+  message String
 }

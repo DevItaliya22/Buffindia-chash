@@ -1,10 +1,24 @@
 import { z } from 'zod';
 
-const formSchema = z.object({
-    name: z.string().min(1),
+const ContactFormSchema = z.object({
+    name: z.string(),
     email: z.string().email(),
-    message: z.string().min(1),
+    phone: z.string(),
+    message: z.string(),
 });
 
-export default formSchema;
+
+const newsletterSchema = z.object({
+    email: z.string().email(),
+});
+
+const PartnerProgramFormSchema = z.object({
+    name: z.string(),
+    email: z.string().email(),
+    phone: z.string(),
+    message: z.string(),
+    city: z.string(),
+});
+
+export  {newsletterSchema,ContactFormSchema,PartnerProgramFormSchema};
 
